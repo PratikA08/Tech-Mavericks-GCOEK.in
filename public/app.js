@@ -425,4 +425,16 @@ async function fetchHistory() {
     }
 
 }
+// INITIALIZATION
+
+function refreshDashboard() {
+fetchStatus();
+fetchHistory();
+}
+
+// FIRST LOAD
+refreshDashboard();
+
+// AUTO REFRESH EVERY 2 SECONDS
+setInterval(refreshDashboard, 2000);
 
