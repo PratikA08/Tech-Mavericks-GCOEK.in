@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 // FINAL SENSOR LIMITS
 const TEMP_LIMIT = 60.0;
-const VIBRATION_LIMIT = 0.150;
+const VIBRATION_LIMIT = 0.250;
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
