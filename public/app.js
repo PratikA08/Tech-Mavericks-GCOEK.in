@@ -426,25 +426,3 @@ async function fetchHistory() {
 
 }
 
-
-// ----------------------------------
-// INITIALIZATION
-// ----------------------------------
-
-async function refreshDashboard() {
-
-    await fetchStatus();
-
-    await fetchHistory();
-
-}
-
-
-// FIRST LOAD
-
-refreshDashboard();
-
-
-// AUTO REFRESH EVERY 2 SECONDS
-
-setInterval(refreshDashboard, 2000);
